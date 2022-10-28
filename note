@@ -1,0 +1,26 @@
+create virtual environment
+install pipwin
+install gdal
+install django
+start project
+make postgresconnection
+install psycopg2
+create new extension in postgres
+make migration
+create super user
+py manage.py collectstatic
+
+Dependencies required for geodjango
+
+pipwin install numpy
+pipwin install pandas
+pipwin install shapely
+pipwin install gdal
+pipwin install fiona
+pipwin install pyproj
+pipwin install six
+pipwin install rtree
+pipwin install geopandas
+pipwin install rasterio
+pipwin install SQLAlchemy
+pip install geoserver-rest
