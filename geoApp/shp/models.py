@@ -63,6 +63,8 @@ def  publish_data(sender,instance,created,**kwargs):
   # ''' 
   geo.create_featurestore(store_name='geoApp', workspace='geoapp', db='geoapp', host='localhost', pg_user='postgres', pg_password='admin',schema='data')
   geo.publish_featurestore(workspace='geoapp', store_name='geoApp', pg_table=name)
+  geo.create_outline_featurestyle('geoApp_shp',workspace='geoapp')
+  geo.publish_style(layer_name=name, style_name='geoApp_shp', workspace='geoapp')
   
 @receiver(post_delete,sender=Shp)
 def delete_data(sender,instance,**kwargs):

@@ -67,10 +67,10 @@ var baseMaps = {
   Carto: Carto,
   Imagery: WorldImagery,
 };
-var overlayMaps = {
-  "GeoJson Marker": markers,
-  mylocation: mylocation,
-};
-L.control
-  .layers(baseMaps, overlayMaps, { collapsed: false, position: "topleft" })
-  .addTo(map);
+// var overlayMaps = {
+//   "GeoJson Marker": markers,
+//   mylocation: mylocation,
+// };
+// L.control
+//   .layers(baseMaps, overlayMaps, { collapsed: false, position: "topleft" })
+//   .addTo(map);
